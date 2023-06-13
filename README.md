@@ -4,32 +4,34 @@ JFrog Instance - https://bellgeekfest.jfrog.io - AWS US East
 Users list - https://docs.google.com/spreadsheets/d/1nI099DVX5JuPMfuwtepYjn8Z6LKLH12ZUET3Vcqr1lo/edit?usp=sharing
 Lab details doc - https://docs.google.com/document/d/1klA7QMXC1u3Q_6ddBO37bOZkxNfUTCCkAXfYG35rYx4/edit?usp=sharing
 
+
+Verify the access to the instance by logging in
+
 Initial setup
-  Verify the access to the instance by logging in
   
   Install JFrog CLI - https://jfrog.com/getcli/
   
-  Easiest option - brew install jfrog-cli
-  
-  Check and confirm - jf -v
-  
+    Easiest option - brew install jfrog-cli
+
+    Check and confirm - jf -v
+
   Configure CLI with JFrog instance
-  
-  Add a config - jf config add
-  
-  Choose a server ID: <unique name> Ex: bellgeekfest
-  
-  JFrog platform url: https://bellgeekfest.jfrog.io
-  
-  JFrog access token (Leave blank for username and password/API key): Hit enter
-  
-  JFrog username: <username>
-  
-  JFrog password or API key: <password>
-  
-  Is the Artifactory reverse proxy configured to accept a client certificate? (y/n): n
-  
-  Use the configured instance - jf config use <server ID>
+
+    Add a config - jf config add
+
+    Choose a server ID: <unique name> Ex: bellgeekfest
+
+    JFrog platform url: https://bellgeekfest.jfrog.io
+
+    JFrog access token (Leave blank for username and password/API key): Hit enter
+
+    JFrog username: <username>
+
+    JFrog password or API key: <password>
+
+    Is the Artifactory reverse proxy configured to accept a client certificate? (y/n): n
+
+    Use the configured instance - jf config use <server ID>
   
   Health check - jf rt ping
 
